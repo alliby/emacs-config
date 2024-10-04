@@ -7,6 +7,8 @@
 (setq inhibit-startup-message 1)
 (setq default-directory "C:\\Users\\mouha")
 (setq eglot-ignored-server-capabilities '(:inlayHintProvider))
+(setq make-backup-files nil) ;; prevent creating ~ files
+(setq dired-listing-switches "-lah") ;; add h for human readable file size
 
 (ido-mode 1)
 (scroll-bar-mode -1)
@@ -43,4 +45,5 @@
   :config
   (setq zig-format-on-save nil))
 (use-package ripgrep)
+
 (load-file "~\\.emacs.d\\odin-mode.el")
